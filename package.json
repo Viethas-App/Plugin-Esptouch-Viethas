@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-esptouch",
+  "version": "1.0.9",
+  "description": "cordova plugin esptouch for esp8266 and esp32",
+  "author": "coloz",
+  "license": "MIT",
+  "cordova": {
+    "id": "cordova-plugin-esptouch",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coloz/cordova-plugin-esptouch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coloz/cordova-plugin-esptouch/issues"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "esptouch",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "engines": {
+    "cordovaDependencies": {
+      "1.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "homepage": "https://github.com/coloz/cordova-plugin-esptouch#readme"
+}
