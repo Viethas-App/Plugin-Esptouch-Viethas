@@ -19,7 +19,7 @@ import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.*;
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.simple.JSONObject;
+import org.json.JSONObject;
 
 public class esptouch extends CordovaPlugin {
   private IEsptouchTask mEsptouchTask;
@@ -92,8 +92,10 @@ public class esptouch extends CordovaPlugin {
 
               if (firstResult.isSuc()) {
                 JSONObject jsonObject = new JSONObject();
-                jsonObject.put("bssid", firstResult.getBssid());
-                jsonObject.put("ip", firstResult.getInetAddress().getHostAddress());
+                String bssid = firstResult.getBssid();
+                String ip = firstResult.getInetAddress().getHostAddress();
+                jsonObject.put("bssid", bssid);
+                jsonObject.put("ip", ip);
 
                 callbackContext.success(jsonObject);
               } else {
