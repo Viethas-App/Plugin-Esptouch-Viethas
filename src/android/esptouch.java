@@ -19,7 +19,7 @@ import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.*;
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
+import org.json.simple.JSONObject;
 
 public class esptouch extends CordovaPlugin {
   private IEsptouchTask mEsptouchTask;
