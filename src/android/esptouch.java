@@ -91,11 +91,11 @@ public class esptouch extends CordovaPlugin {
               final int maxDisplayCount = taskResultCount;
 
               if (firstResult.isSuc()) {
-                  callbackContext.success("Esptouch success, bssid = "
-                                + firstResult.getBssid()
-                                + ",InetAddress = "
-                                + firstResult.getInetAddress()
-                                .getHostAddress() + "\n")
+                JSONObject jsonObject = new JSONObject();
+                jsonObject.put("bssid", firstResult.getBssid());
+                jsonObject.put("ip", firstResult.getInetAddress().getHostAddress());
+
+                callbackContext.success(jsonObject);
               } else {
                 callbackContext.error("No Device Found");
               }
